@@ -1,75 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="CIFE Fisioterapia - Centro Integrado de Fisioterapia e Estética. Oferecemos serviços de fisioterapia, pilates, RPG, drenagem linfática e estética.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CIFE Fisioterapia</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" type="image/x-icon"   href="Imagens/Logo2.png" />
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon"   href="imagens/Logo2.png" />
 
+</head>
 <body>
+        <div id="nav-bar">
+            <img id="CIFE-logo" src="imagens/logo CIFE-1.png" />
+        </div>
+
+        <div id="social-media">
+            <a href="https://www.instagram.com/cifefisioterapia/" target="_blank"><button class="instagram" ><i class="fa fa-instagram"></i></button></a>
+            <a href="https://www.facebook.com/profile.php?id=100046588335034" target="_blank"><button class="facebook"><i class="fa fa-facebook"></i></button></a>
+            <a href="https://api.whatsapp.com/send/?phone=5522988226023&text&type=phone_number&app_absent=0" target="_blank"><button class="whatsapp"><i class="fa fa-whatsapp"></i></button></a>
+        </div>
+
+<!------------------------------------------------------------------------------------------------>
+
+        <picture id="imagens">
+
+            <picture class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <source media="(max-width: 480px)" srcset="imagens/first-slide-small.png">
+                <img class="mySlidesImgs" src="imagens/first-slide.png" />
+            </picture>
+            <picture class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <source media="(max-width: 480px)" srcset="imagens/second-slide-small.png">
+                <img class="mySlidesImgs" src="imagens/second-slide.png" />
+            </picture>
+            <picture class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <source media="(max-width: 480px)" srcset="imagens/third-slide-small.png">
+                <img class="mySlidesImgs" src="imagens/third-slide.png" />
+            </picture>
     
-    <div class="container">
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </picture>
+    
+        
+        
+        <div id="dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    
+
+
+<!------------------------------------------------------------------------------------------------>
+
+    <div id="formsubmit">
+        
        
+        
+        <div id="formitems">
+
+            <h1>NOS MANDE UMA MENSAGEM</h1>
+
+            <form action="https://formsubmit.co/cife.fisioterapia@gmail.com" method="POST">
+
+                <label><textarea id="name" type="text" name="name" placeholder="Nome" aria-invalid="true"></textarea></label>
+                <label><textarea id="email" type="email" name="email" required placeholder="E-mail"></textarea>
+                <label><textarea id="text" type="text" name="name" required placeholder="Mensagem"></textarea></label>
+                <label><textarea id="subject" type="text" name="subject" placeholder="Assunto"></textarea></label>
+                <label><textarea id="phone" type="text" name="phone" placeholder="Telefone"></textarea></label>        
+                <label><input id="submit" type="submit"></input></label>
+
+            </form>
+        </div>
+
+        <div id="contact">
+
+            <h1>Entre em contato conosco</h1>
+
+            <p id="localizacao">Localização: <span class="contact-span">Av. Brasil, 10 - Centro, Araruama - RJ, 28970-000</span></p>
+            <p id="telefone">Telefone: <span class="contact-span">(22) 2665-1068</span></p>
+            <p id="email-contact">Email: <span class="contact-span" >cife.fisioterapia @gmail.com</span></p>
+
+        </div>
+
     </div>
 
-    <div> <!--Give Class Name Later-->
+    <div class="footer">
+        
+    </div>
 
-        <fieldset>
-
-            <div class="firstpart">
-                <img src="Imagens/Logo2.png" />
-            </div>
-
-        </fieldset>
-
-
-        <fieldset>
-            
-            <div class="secondpart">
-                <img src="Imagens/Card1.png" />
-                <img src="Imagens/Card2.png" />
-                <img src="Imagens/Card3.png" />
-            </div>
-
-        </fieldset>
-    
-       
-
-    </div>    
-    <div>
-        <div class="FORM">
-            <div class="formsubmit">
-                <label><h1>Entre em contato conosco</h1></label>
-                <form action="https://formsubmit.co/cife.fisioterapia@gmail.com" method="POST">
-                    <label><textarea class="email" type="email" name="email" required placeholder="E-mail"></textarea>
-                    <label><textarea class="text" type="text" name="name" required placeholder="Mensagem"></textarea></label>
-                    <label><input class="submit" type="submit"></input></label>
-                </form>
-            </div>
-        </div>
-    </div >
-    <footer>
-        <div class="social">
-            <div class="buttons">
-                <a href="https://www.instagram.com/cifefisioterapia/" target="_blank"><button class="instagram" ><i class="fa fa-instagram"></i> Instagram</button></a>
-            </div>
-            <div class="buttons">
-                <a href="https://www.facebook.com/profile.php?id=100046588335034" target="_blank"><button class="facebook"><i class="fa fa-facebook"></i> Facebook</button></a>
-            </div>
-            <div class="buttons">
-                <a href="https://api.whatsapp.com/send/?phone=5522988226023&text&type=phone_number&app_absent=0" target="_blank"><button class="whatsapp"><i class="fa fa-whatsapp"></i> Whatsapp</button></a>
-            </div>
-        </div>
-        <hr>
-        <div class="contactinfo">
-            <p class="location">Avenida Brasil N°10 - 5°Andar - Salas 501 e 502 - CENTRO - ARARUAMA/RJ</p>
-            <div class="vl"></div>
-            <p class="phone_number">(22)2665-1068</p>
-        </div>
-    </footer>            
+    <script src="jScript.js"></script>
+    <script src="https://kit.fontawesome.com/231134a166.js" crossorigin="anonymous"></script>
 </body>
 </html>
